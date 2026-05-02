@@ -14,7 +14,7 @@ git clone https://github.com/Parsa307/ezytel.git && cd ezytel
 sudo pacman -S php
 ```
 
-3. Modify channels.txt to add the channel username.
+3. Create or Modify channels.txt to add the channel username.
 
 ```
 telegram
