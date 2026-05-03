@@ -15,7 +15,7 @@ body {
 }
 .menu_block {
     width: 450px;
-    background: white;
+    background: black;
     box-shadow: 0 0 20px 0px #0000001a;
     z-index: 1;
     display: flex;
@@ -24,7 +24,6 @@ body {
 }
 .main_block {
     flex: 1;
-    background: url(./bg.jpg);
     background-size: cover;
     overflow-y: scroll;
 }
@@ -34,7 +33,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 30px;
-    color: #787878;
+    color: #d9d9d9;
     font-size: 0.85em;
     flex: 1;
     direction: rtl;
@@ -59,8 +58,8 @@ a {
     padding-top: 10px;
 }
 .menu_copyright span {
-    color: #979797;
-    font-size: 13px;
+    color: #fff;
+    font-size: 15px;
 }
 .menu_channel_wrapper {
     padding: 10px 15px;
@@ -71,13 +70,13 @@ a {
     transition: 0.5s;
 }
 .menu_channel_wrapper:hover {
-    background: #f5f5f5;
+    background: #000000;
 }
 .menu_channel_selected {
-    background: #439fe2 !important;
+    background: #258 !important;
 }
 .menu_channel_selected p,.menu_channel_selected span {
-    color: white !important;
+    color: black !important;
 }
 .menu_channel_avatar {
     width: 60px;
@@ -116,11 +115,11 @@ a {
     margin: 0;
     font-weight: bold;
     font-size: 18px;
-    color: #1b1b1b;
+    color: #d9d9d9;
 }
 .menu_channel_info span {
     font-size: 15px;
-    color: #999999;
+    color: #d9d9d9;
     direction: rtl;
     text-align: end;
 }
@@ -194,7 +193,7 @@ a {
     position: absolute;
     right: 0;
     top: 30px;
-    background: #e8e8e8;
+    background: #000000;
     padding: 2px 8px;
     border-radius: 20px;
     color: #5a5a5a;
@@ -215,7 +214,7 @@ a {
     align-items: center;
     font-family: monospace;
     font-size: 18px;
-    color: #a2a2a2;
+    color: #000;
     user-select: none;
     cursor: pointer;
 }
@@ -228,8 +227,8 @@ a {
     }
 }
 body {
-  --text-color: #212121;
-  --second-color: #738ca7;
+  --text-color: #fff;
+  --second-color: #fff;
   --accent-color: #2481cc;
   --accent-background: #2481cc1f;
   --line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color)); 
@@ -295,7 +294,7 @@ body {
 body.dark,
 html.theme_dark body {
   --text-color: #fff;
-  --second-color: #798894;
+  --second-color: #fff;
   --accent-color: #3ca1eb;
   --accent-line-color: #4ba3e2;
   --accent-btn-color: #3ca1eb;
@@ -606,7 +605,7 @@ tg-emoji .tg-emoji-webm video {
 
 .no_bubble .tgme_widget_message_reactions .tgme_reaction {
     background: var(--service-bg-blured);
-    color: white;
+    color: blue;
 }
 
 .icon-telegram-stars {
@@ -1156,7 +1155,7 @@ a.tgme_widget_message_video_player:hover {
 .tgme_widget_message_video_player .message_media_view_in_telegram:hover,
 .tgme_widget_message_roundvideo_player .message_media_view_in_telegram:hover {
   background: #fff;
-  color: #777;
+  color: #fff;
 }
 .tgme_widget_message_sticker_wrap {
   position: relative;
@@ -1542,7 +1541,7 @@ a.tgme_widget_message_contact_wrap:focus:hover {
   margin-top: 6px;
 }
 .tgme_widget_message_text {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 21px;
   word-break: break-word;
   margin-top: 6px;
@@ -1617,7 +1616,7 @@ a.tgme_widget_message_contact_wrap:focus:hover {
 .tgme_widget_message_reply .tgme_widget_message_author,
 .tgme_widget_message_reply .tgme_widget_message_text,
 .tgme_widget_message_reply .tgme_widget_message_metatext {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 20px;
   margin: -2px 0;
   white-space: nowrap;
@@ -2518,16 +2517,16 @@ body.tme_widget_mode .tgme_widget_message {
 
 
 body.tme_mode {
-  --text-color: #000;
-  --second-color: #7d7f81;
+  --text-color: #fff;
+  --second-color: #fff;
   --bubble-logo-icon-svg: url('data:image/svg+xml,%3Csvg%20height%3D%2220%22%20viewBox%3D%220%200%2024%2020%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22m488.649875%2044.6098697c6.442438-2.8224615%2010.738405-4.6832009%2012.887902-5.5822181%206.137252-2.5668769%207.41252-3.0127709%208.243723-3.0276516.182815-.0030813.591576.0424775.856354.2585203.223574.1824224.285088.428849.314524.6018054.029436.1729565.066092.5669556.036954.874815-.33258%203.5138587-1.771648%2012.041067-2.503764%2015.9766489-.309785%201.6652923-.919763%202.2236562-1.510292%202.2782995-1.283356.1187526-2.257879-.8528431-3.500872-1.6721675-1.945039-1.2820809-3.043862-2.0801802-4.931859-3.3312543-2.181908-1.4458326-.767468-2.2404874.475995-3.5391756.32542-.3398729%205.979917-5.5116482%206.08936-5.9808093.013687-.0586764.02639-.2773944-.102829-.3928855-.129218-.1154911-.319934-.0759976-.457559-.0445881-.195081.044522-3.302306%202.1096922-9.321675%206.1955107-.881976.6089971-1.680842.9057209-2.396598.8901714-.789064-.017142-2.306907-.4486274-3.435267-.8174505-1.38398-.4523766-2.48394-.6915513-2.388158-1.4598267.049889-.4001653.59791-.8094133%201.644061-1.227744z%22%20fill%3D%22%231c93e3%22%20fill-rule%3D%22evenodd%22%20transform%3D%22translate%28-487%20-36%29%22%2F%3E%3C%2Fsvg%3E');
   --views-icon-svg: url('data:image/svg+xml,%3Csvg%20height%3D%2210%22%20viewBox%3D%220%200%2016%2010%22%20width%3D%2216%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22m8%200c2.8897625%200%205.2230958%201.66666667%207%205-1.7769042%203.33333333-4.1102375%205-7%205-2.88976248%200-5.22309581-1.66666667-7-5%201.77690419-3.33333333%204.11023752-5%207-5zm0%201.48148148c-1.98523978%200-3.59459459%201.5752944-3.59459459%203.51851852s1.60935481%203.51851852%203.59459459%203.51851852%203.5945946-1.5752944%203.5945946-3.51851852-1.60935482-3.51851852-3.5945946-3.51851852zm0%201.85185185c.94037674%200%201.7027027.74619209%201.7027027%201.66666667s-.76232596%201.66666667-1.7027027%201.66666667-1.7027027-.74619209-1.7027027-1.66666667.76232596-1.66666667%201.7027027-1.66666667z%22%20fill%3D%22%237d7f81%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
   --voters-icon-svg: url('data:image/svg+xml,%3Csvg%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%20width%3D%2212%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22m3.60486756.00162755%204.54930464-.00162755c1.33727811%200%201.82220747.13923842%202.3110964.40069906.4888888.26146064.8725717.6451435%201.1340323%201.13403238l.0922854.18482021c.2018093.43861897.3084137.9561578.3084137%202.12627615v4.3083444c0%201.33727811-.1392384%201.82220747-.4006991%202.3110964-.2614606.4888888-.6451435.8725717-1.1340323%201.1340323l-.1848203.0922854c-.43861892.2018093-.95615775.3084137-2.1262761.3084137h-4.3083444c-1.33727811%200-1.82220747-.1392384-2.31109636-.4006991-.48888888-.2614606-.87257174-.6451435-1.13403238-1.1340323l-.09228534-.1848203c-.18739436-.407289-.29269878-.88262629-.30678617-1.88531586l-.00162755-4.54930464c0-1.33727811.13923842-1.82220747.40069906-2.31109636.26146064-.48888888.6451435-.87257174%201.13403238-1.13403238l.18482021-.09228534c.40728905-.18739436.88262634-.29269878%201.88531591-.30678617zm6.42546254%202.96804236c-.26626658-.26626656-.68293026-.29047261-.97654175-.07261815l-.08411844.07261815-3.96966991%203.96933009-1.46966991-1.46933009-.08411844-.07261815c-.29361149-.21785446-.71027517-.19364841-.97654174.07261815-.26626656.26626657-.29047261.68293025-.07261815.97654174l.07261815.08411844%202%202%20.08411844.07261815c.26098799.19364841.61920241.19603913.88259105.00717216l.09395069-.07979031%204.50000001-4.5.0726181-.08411844c.2178545-.29361149.1936484-.71027517-.0726181-.97654174z%22%20fill%3D%22%237d7f81%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
 
-  --box-bg: #fff;
-  --box-bg-blured: rgba(255, 255, 255, .84);
-  --service-bg-blured: #4A8E3A8C;
-  /*--service-bg-blured: rgba(0, 0, 0, 0.2);*/
+  --box-bg: #6666;
+  --box-bg-blured: rgba(37, 155, 237, 0.85);
+  --service-bg-blured: #259;
+  /*--service-bg-blured: rgba(37, 155, 237, 0.85);*/
 }
 body.tme_mode .tgme_widget_message_bubble {
   border: none;
@@ -2544,7 +2543,7 @@ body.tme_mode .tgme_widget_message_bubble_tail .border_3x {
 body.dark.tme_mode,
 html.theme_dark body.tme_mode {
   --text-color: #fff;
-  --second-color: #7d7f81;
+  --second-color: #fff;
   --accent-color: #64b5ef;
   --accent-background: #64b5ef1f;
   --accent-line-color: #64b5ef;
@@ -2559,7 +2558,7 @@ html.theme_dark body.tme_mode {
 
   --box-bg: #1e1e1e;
   --box-bg-blured: rgba(34, 34, 34, .84);
-  /*--service-bg-blured: rgba(255, 255, 255, 0.1);*/
+  /*--service-bg-blured: rgba(37, 155, 237, 0.85);*/
   --service-bg-blured: #1e1e1e;
 }
 
@@ -2581,7 +2580,7 @@ html.theme_dark body.dark_accent_light {
   --radio-item-icon-svg: url('data:image/svg+xml,%3Csvg%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20width%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22%2315202b%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20height%3D%225.5%22%20rx%3D%221.1%22%20transform%3D%22matrix%28.70710678%20-.70710678%20.70710678%20.70710678%20-6.903479%208.428501%29%22%20width%3D%222.2%22%20x%3D%225.622361%22%20y%3D%229.797487%22%2F%3E%3Crect%20height%3D%2211%22%20rx%3D%221.1%22%20transform%3D%22matrix%28.70710678%20.70710678%20-.70710678%20.70710678%2010.937311%20-5.071194%29%22%20width%3D%222.2%22%20x%3D%2210.490128%22%20y%3D%225.166905%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
 }
 body {
-  background-color: #e5ebef;
+  background-color: #000000;
 }
 
 tg-spoiler {
@@ -2593,12 +2592,12 @@ html.theme_dark tg-spoiler {
 
 html body {
   --accent-color-hover: #1a8ad5;
-  --text-color: #000;
-  --second-color: #7d7f81;
-  --box-bg: #fff;
-  --box-bg-blured: rgba(255, 255, 255, .84);
-  --service-bg-blured: rgba(0, 0, 0, 0.2);
-  --highlight-bg: rgba(255, 255, 255, .4);
+  --text-color: #fff;
+  --second-color: #fff;
+  --box-bg: #6666;
+  --box-bg-blured: rgba(37, 155, 237, 0.85);
+  --service-bg-blured: rgba(37, 155, 237, 0.85);
+  --highlight-bg: rgba(37, 155, 237, 0.85);
   --tme-logo-color: #363b40;
 }
 
@@ -2606,7 +2605,7 @@ html.theme_dark body {
   --text-color: #fff;
   --box-bg: #1e1e1e;
   --box-bg-blured: rgba(34, 34, 34, .84);
-  --service-bg-blured: rgba(255, 255, 255, 0.1);
+  --service-bg-blured: rgba(37, 155, 237, 0.85);
   --highlight-bg: rgba(127, 127, 127, .4);
   --tme-logo-color: #fff;
 }
@@ -2679,7 +2678,7 @@ html.theme_dark body.twallpaper .tgme_background_pattern {
   top: 0;
   z-index: 100;
   background: var(--box-bg-blured);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(37, 155, 237, 0.85);
   -webkit-backdrop-filter: blur(25px);
   backdrop-filter: blur(25px);
   height: 63px;
@@ -2767,13 +2766,13 @@ html.theme_dark body.twallpaper .tgme_background_pattern {
   color: var(--second-color);
 }
 .tgme_header_search_form_input:focus::-webkit-input-placeholder {
-  color: rgba(125, 127, 129, 0.4);
+  color: rgba(37, 155, 237, 0.85);
 }
 .tgme_header_search_form_input:focus::-moz-placeholder {
-  color: rgba(125, 127, 129, 0.4);
+  color: rgba(37, 155, 237, 0.85);
 }
 .tgme_header_search_form_input:focus:-ms-input-placeholder {
-  color: rgba(125, 127, 129, 0.4);
+  color: rgba(37, 155, 237, 0.85);
 }
 .tgme_header .tgme_container {
   padding: 0 12px;
@@ -3066,7 +3065,7 @@ a.tgme_channel_join_telegram {
 }
 .tgme_widget_message_author,
 .tgme_widget_message_forwarded_from {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 19px;
   margin: 1px 0 0;
 }
@@ -3083,15 +3082,15 @@ a.tgme_channel_join_telegram {
 .tgme_widget_message_text,
 .tgme_widget_message_poll,
 .tgme_widget_message_inline_button {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 21px;
 }
 .tgme_widget_message_poll_type {
-  font-size: 13px;
+  font-size: 18px;
   margin-top: 0;
 }
 .tgme_widget_message_poll_options {
-  font-size: 14px;
+  font-size: 18px;
   min-width: 240px;
   padding-top: 0;
   margin-bottom: 10px;
@@ -3265,7 +3264,7 @@ body.twallpaper .no_bubble .tgme_widget_message_roundvideo_play {
   r: calc(50% - 1.5px);
 }
 .tgme_widget_message_roundvideo_border {
-  border-color: #e5ebef;
+  border-color: #000000;
 }
 html.theme_dark .tgme_widget_message_roundvideo_border {
   border-color: #111;
@@ -3390,7 +3389,7 @@ body .no_bubble .tgme_widget_message_forwarded_from,
   border-radius: 7px;
   /*background: #b5c0c8;*/
   background: var(--service-bg-blured);
-  color: #fff;
+  color: #000;
   padding: 3px 6px;
 }
 .tgme_widget_message_views:after {
@@ -3445,7 +3444,7 @@ body .no_bubble .tgme_widget_message_forwarded_from,
   /*background: #b5c0c8;*/
   background: var(--service-bg-blured);
   box-shadow: none;
-  color: #fff;
+  color: #000;
   border-radius: 13px;
   padding: 3px 12px;
   margin: 0 10px;

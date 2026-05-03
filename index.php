@@ -4,7 +4,7 @@
     if (!file_exists(__DIR__.'/cache')) mkdir(__DIR__.'/cache');
     if (!file_exists(__DIR__.'/channels.txt')) file_put_contents(__DIR__.'/channels.txt','');
     $CHANNELS = file_parse();
-    $VERSION  = '2';
+    $VERSION  = '3';
 ?>
 <html lang="en">
 <head>
@@ -36,7 +36,7 @@
             </div>
         <?php endforeach; ?>
     <?php endif; ?>
-        <div class="menu_copyright"><p>© 2026 EzyTel (ver <?= $VERSION ?>)</p><span>Made with ❤️ for the Brave People of IRAN by J[o]King</span></div>
+        <div class="menu_copyright"><p>© 2026 EzyTel (ver <?= $VERSION ?>)</p><span>Made with ❤️ for the Brave People of IRAN by J[o]King & contributors</span></div>
     </div>
     <div class="main_block">
 
