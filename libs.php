@@ -45,7 +45,7 @@
     function json_info($chid){
         $html = curl_auto($chid);
         $isok = stripos($html,'<meta property="og:title" content="')!==false;
-        $file = __DIR__.'/cache/'.$chid.'.json';
+        $file = __DIR__.'/.cache/'.$chid.'.json';
         if (!$isok && file_exists($file)){
             echo json_encode(array_merge(json_decode(file_get_contents($file),true),['newmsg'=>'OFF']));die;
         }else if (!$isok){
@@ -55,7 +55,7 @@
         $pic  = str_find($html,['<meta property="og:image" content="https://'],'"');
         $hash = md5($pic);
         if (curl_download("https://".$pic,$hash.'.jpg')!==false){
-            $json['avatar'] = 'cache/'.$hash.'.jpg';
+            $json['avatar'] = '.cache/'.$hash.'.jpg';
         }
         if (stripos($html,'data-post="')!==false){
             $lastpost = str_find($html,['*data-post="'],false);
@@ -121,7 +121,7 @@
         return $response;
     }
     function curl_download($url,$name){
-        if (file_exists(__DIR__.'/cache/'.$name)) return true;
+        if (file_exists(__DIR__.'/.cache/'.$name)) return true;
         $parsedUrl = parse_url($url);
         if (!isset($parsedUrl['host'])) return false;
         $host = $parsedUrl['host'];
@@ -136,7 +136,7 @@
         $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         curl_close($ch);
         if ($httpCode != 200) return false;
-        file_put_contents(__DIR__.'/cache/'.$name, $imageData);
+        file_put_contents(__DIR__.'/.cache/'.$name, $imageData);
         return true;
     }
     function str_find($str,$find,$end){
