@@ -4,7 +4,7 @@
     if (!file_exists(__DIR__.'/cache')) mkdir(__DIR__.'/cache');
     if (!file_exists(__DIR__.'/channels.txt')) file_put_contents(__DIR__.'/channels.txt','');
     $CHANNELS = file_parse();
-    $VERSION  = '3';
+    $VERSION  = '4';
 ?>
 <html lang="en">
 <head>
