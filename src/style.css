@@ -15,7 +15,7 @@ body {
 }
 .menu_block {
     width: 450px;
-    background: black;
+    background: #0E0E0E;
     box-shadow: 0 0 20px 0px #0000001a;
     z-index: 1;
     display: flex;
@@ -68,15 +68,28 @@ a {
     user-select: none;
     cursor: pointer;
     transition: 0.5s;
+    position: relative;
+}
+.menu_channel_wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    right: 15px;
+    height: 0.5px;
+    background: #2f2f2f;
+}
+.menu_channel_wrapper:last-child::after {
+    display: none;
 }
 .menu_channel_wrapper:hover {
     background: #000000;
 }
 .menu_channel_selected {
-    background: #258 !important;
+    background: #191919 !important;
 }
 .menu_channel_selected p,.menu_channel_selected span {
-    color: black !important;
+    color: #d9d9d9 !important;
 }
 .menu_channel_avatar {
     width: 60px;
@@ -130,7 +143,8 @@ a {
     white-space: nowrap;
 }
 .menu_channel_selected .menu_channel_stats span {
-    background: #3F51B5 !important;
+    background: #4A4A4A !important;
+    color: #e0e0e0 !important;
 }
 .menu_channel_info p{
     width: calc(100% - 25px);
@@ -187,34 +201,44 @@ a {
     cursor: pointer;
     transition: 0.5s;
 }
-.menu_channel_stats {width: 50px;position: relative;flex-shrink: 0;}
-.menu_channel_stats p {position: absolute;margin: 0;right: 0;font-size: 14px;top: 5px;color: #a0a0a0;width: 100px;text-align: right;}
+.menu_channel_stats {
+    width: 50px;
+    position: relative;
+    flex-shrink: 0;
+}
+.menu_channel_stats p {
+    position: absolute;
+    margin: 0;
+    right: 0;
+    font-size: 14px;
+    top: 5px;
+    color: #a0a0a0;
+    width: 100px;
+    text-align: right;
+}
 .menu_channel_stats span {
     position: absolute;
     right: 0;
     top: 30px;
-    background: #000000;
+    background: #4A4A4A;
     padding: 2px 8px;
     border-radius: 20px;
-    color: #5a5a5a;
+    color: #e0e0e0;
     font-size: 15px;
     font-family: monospace;
 }
 .tgme_header::after {
-    content: 'X';
+    content: '';
     width: 30px;
     height: 30px;
-    background: #00000014;
     position: absolute;
     right: 15px;
     top: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M4,11L16.2,11L10.6,5.4L12,4L20,12L12,20L10.6,18.6L16.2,13L4,13L4,11z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: monospace;
-    font-size: 18px;
-    color: #000;
     user-select: none;
     cursor: pointer;
 }
@@ -1541,7 +1565,7 @@ a.tgme_widget_message_contact_wrap:focus:hover {
   margin-top: 6px;
 }
 .tgme_widget_message_text {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   word-break: break-word;
   margin-top: 6px;
@@ -1616,7 +1640,7 @@ a.tgme_widget_message_contact_wrap:focus:hover {
 .tgme_widget_message_reply .tgme_widget_message_author,
 .tgme_widget_message_reply .tgme_widget_message_text,
 .tgme_widget_message_reply .tgme_widget_message_metatext {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   margin: -2px 0;
   white-space: nowrap;
@@ -2595,7 +2619,7 @@ html body {
   --text-color: #fff;
   --second-color: #fff;
   --box-bg: #6666;
-  --box-bg-blured: rgba(37, 155, 237, 0.85);
+  --box-bg-blured: rgba(16, 16, 16, 0.85);
   --service-bg-blured: rgba(37, 155, 237, 0.85);
   --highlight-bg: rgba(37, 155, 237, 0.85);
   --tme-logo-color: #363b40;
@@ -2678,7 +2702,7 @@ html.theme_dark body.twallpaper .tgme_background_pattern {
   top: 0;
   z-index: 100;
   background: var(--box-bg-blured);
-  box-shadow: 0px 2px 4px rgba(37, 155, 237, 0.85);
+  box-shadow: 0px 2px 4px rgba(16, 16, 16, 0.85);
   -webkit-backdrop-filter: blur(25px);
   backdrop-filter: blur(25px);
   height: 63px;
@@ -3065,7 +3089,7 @@ a.tgme_channel_join_telegram {
 }
 .tgme_widget_message_author,
 .tgme_widget_message_forwarded_from {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 19px;
   margin: 1px 0 0;
 }
@@ -3082,7 +3106,7 @@ a.tgme_channel_join_telegram {
 .tgme_widget_message_text,
 .tgme_widget_message_poll,
 .tgme_widget_message_inline_button {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
 }
 .tgme_widget_message_poll_type {

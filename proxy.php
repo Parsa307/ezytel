@@ -16,5 +16,5 @@
         http_response_code(400);
     }else{
         header('Content-Type: image/jpeg');
-        header('Location: cache/'.$hash.'.jpg');
+        header('Location: .cache/'.$hash.'.jpg');
     }
