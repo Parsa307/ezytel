@@ -68,19 +68,6 @@ a {
     user-select: none;
     cursor: pointer;
     transition: 0.5s;
-    position: relative;
-}
-.menu_channel_wrapper::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 80px;
-    right: 15px;
-    height: 0.5px;
-    background: #2f2f2f;
-}
-.menu_channel_wrapper:last-child::after {
-    display: none;
 }
 .menu_channel_wrapper:hover {
     background: #000000;
