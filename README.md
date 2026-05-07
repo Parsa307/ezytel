@@ -1,6 +1,6 @@
 ## ezytel
 
-## Usage:
+## Usage
 
 1. Clone the repo
 
@@ -27,3 +27,6 @@ php -S localhost:8000
 ```
 
 Now you could open ezytel at your browser `http://localhost:8000`
+
+## Backstory
+This project was developed at a rozblog forum by J[o]King when Google was whitelisted at the 21 iran network outage, I decided to push this project at the 2026 network outage when they opened google.com. [Original Version](https://github.com/Parsa307/ezytel/tree/rozblog-version) I am not affiliated with J[o]King.
