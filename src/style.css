@@ -1627,7 +1627,7 @@ a.tgme_widget_message_contact_wrap:focus:hover {
 .tgme_widget_message_reply .tgme_widget_message_author,
 .tgme_widget_message_reply .tgme_widget_message_text,
 .tgme_widget_message_reply .tgme_widget_message_metatext {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   margin: -2px 0;
   white-space: nowrap;
@@ -3076,7 +3076,7 @@ a.tgme_channel_join_telegram {
 }
 .tgme_widget_message_author,
 .tgme_widget_message_forwarded_from {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 19px;
   margin: 1px 0 0;
 }
@@ -3093,15 +3093,15 @@ a.tgme_channel_join_telegram {
 .tgme_widget_message_text,
 .tgme_widget_message_poll,
 .tgme_widget_message_inline_button {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 21px;
 }
 .tgme_widget_message_poll_type {
-  font-size: 18px;
+  font-size: 13px;
   margin-top: 0;
 }
 .tgme_widget_message_poll_options {
-  font-size: 18px;
+  font-size: 14px;
   min-width: 240px;
   padding-top: 0;
   margin-bottom: 10px;
