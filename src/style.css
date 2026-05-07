@@ -131,7 +131,6 @@ a {
 }
 .menu_channel_selected .menu_channel_stats span {
     background: #4A4A4A !important;
-    color: #e0e0e0 !important;
 }
 .menu_channel_info p{
     width: calc(100% - 25px);
